@@ -1,4 +1,4 @@
-alias grep="grep -lnE --color=ALWAYS"
+alias grep="grep -nE --color=ALWAYS"
 alias ll="ls -la"
 
 export PATH=$PATH:/Users/wulff/Applications/packer:/Library/Frameworks/GDAL.framework/Programs
@@ -19,7 +19,7 @@ source ~/.dotfiles/git-prompt.sh
 
 PROMPT_COMMAND=prompt_command
 
-PS1='[\!] $(exit_code=$?; [[ $exit_code -eq 0 ]] || printf %s \e[31m Exit:$exit_code \e[0m " ")\w$(__git_ps1 " (%s)")\$ '
+PS1='[\!] $(exit_code=$?; [[ $exit_code -eq 0 ]] || printf %s \e[31m Exit:$exit_code \e[0m " ")\W$(__git_ps1 " (%s)")\$ '
 
 function prompt_command {
   MY_USERHOST=$(printf %s `whoami` @ `hostname -s`)
