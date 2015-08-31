@@ -33,6 +33,6 @@ prompt_command() {
   exit_code=$?
   load=$(uptime | awk '{min=NF-2;print $min}')
 
-  PS1='\[$faded\][\D{%Y-%m-%d %H:%M:%S} ${load}] \[$user\]\u \[$faded\]at \[$host\]\h \[$faded\]in \[$path\]\w$(__git_ps1 " \[$faded\]on \[$git\]%s")\[$reset\]\n[\!] $([[ $exit_code -eq 0 ]] || printf %s \[$error\] Exit:$exit_code \[$reset\] " ")\$ '
+  PS1='\[$faded\][\D{%H:%M:%S} ${load}] \[$user\]\u \[$faded\]at \[$host\]\h \[$faded\]in \[$path\]\w$(__git_ps1 " \[$faded\]on \[$git\]%s")\[$reset\]\n[\!] $([[ $exit_code -eq 0 ]] || printf %s \[$error\] Exit:$exit_code \[$reset\] " ")\$ '
 }
 PROMPT_COMMAND=prompt_command
