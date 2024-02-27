@@ -1,0 +1,16 @@
+.DS_Store
+
+# direnv
+.envrc
+
+# ide configurations
+.idea
+.vscode
+
+# perltidy
+*.tdy
+
+# s3cmd
+.s3cfg
+
+notes.txt
