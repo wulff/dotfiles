@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/wulff/.config/git'
+let g:netrw_dirhist_3='/Users/wulff/Workspace/src/github.com/informeren/redaktion/.platform'
+let g:netrw_dirhist_2='/Users/wulff/Workspace/src/github.com/wulff/dotfiles/zsh/.config/zsh/functions.d'
+let g:netrw_dirhist_1='/Users/wulff/.perlbrew'

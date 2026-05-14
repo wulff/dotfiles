@@ -77,7 +77,7 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ \[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=\
+set statusline+=\ 
 
 " Use the silver searcher if it's available
 if executable("ag")
